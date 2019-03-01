@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	background-color: #000;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto", sans-serif;
+}
+*:focus {
+	outline: none;
+    border-color: #bff698;
+    box-shadow: 0 0 3px #bff698;
+    text-decoration:underline;
+    text-decoration-skip: ink;
+}
+
+/*header-footer-------------------------*/
+header, footer {
+	background-color: #000;
+	color: white;
+	width: 100%;
+}
+header {
+	position: fixed;
+	overflow: auto;
+	padding-left: 1em;
+	z-index: 100;
+}
+/*box-shadow*/
+header {
+   -moz-box-shadow:    inset 0 0 3px #bff698;
+   -webkit-box-shadow: inset 0 0 3px #bff698;
+   box-shadow:         inset 0 0 3px #bff698;
+}
+footer{
+	text-align: right;
+	padding-right: 1em;
+}
+header h1 {
+	width: 15%;
+	float: left;
+	font-size: 1.5em;
+}
+
+/*--------------------------------------*/
+/*navigation----------------------------*/
+nav {
+	font-size: 1.3em;
+	font-weight: bold;
+	width: 85%;
+	float: left;
+	padding-top: 1em;
+  padding-bottom: 1em;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: left;
+}
+nav li {
+	display: inline;
+	padding-right: 3em;
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+  position: relative;
+
+}
+nav a:hover {
+    color: #bff698;
+}
+nav a:active {
+    text-decoration: none;
+}
+.active a{
+    color: #bff698;
+}
+/*nav link transitions*/
+nav a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #bff698;
+  transition: width 0.4s;
+}
+nav a:hover:after {
+  width: 100%;
+}
+/*--------------------------------------*/
+/*main content on home page-------------*/
+h1 {
+	color:#fff;
+	font-size: 1.5em;
+	display:block;
+	padding-left:0.5em;
+	padding-top:0;
+}
+
+.wrapper {
+	overflow: auto;
+	width: 90%;
+	padding: 5% 10%;
+	margin:auto;
+  padding-top: 5em;
+}
+
+
+/*--------------------------------------*/
+/*contact page--------------------------*/
+/*form----------------------------------*/
+.hint{
+  display:none;
+  font-size: 0.8em;
+  color: white;
+  padding-bottom:1em;
+  margin-top:-1.3em;
+}
+form{
+	width: 40%;
+	float:left;
+	margin:0 0 4em 0;
+	padding:0;
+}
+fieldset {
+	padding: 1em;
+	margin:0;
+	border: 1px solid #bff698;
+
+}
+legend {
+	font-size: 1.5em;
+	color:  #bff698;
+
+}
+label {
+	font-family:"Roboto", sans-serif;
+	color:  #bff698;
+	display: block;
+	padding: 0;
+	margin:0;
+	font-size: 1.2em;
+}
+input, textarea, select {
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	display: block;
+	margin-bottom: 2em;
+	width: 15em;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom: 1px solid #bff698;
+	background-color: #000;
+	color:#fff;
+}
+select{
+	color: #999;
+}
+option[value=""][disabled] {
+display: none;
+}
+option {
+color: #fff;
+}
+button{
+	color:#bff698;
+	background-color: #000;
+	border: none;
+	font-size: 1.2em;
+}
+button:hover{
+	color:white;
+	border-color: #bff698;
+    box-shadow: 0 0 3px #bff698;
+    cursor: pointer;
+    /*cursor: hand;*/
+}
+
+aside {
+	float: left;
+	width:40%;
+	margin: 1% 5%;
+	padding: 3% 0;
+	/*background-color: #296300;*/
+	color:#fff;
+	border-radius: 5em 0em;
+	text-align: center;
+}
+
+/*--------------------------------------*/
+/*other form styles*/
+#nameAva{
+  display: block;
+  padding-bottom: 1em;
+  font-size: 1.3em;
+}
+
+/*--------------------------------------*/
+/*graph page*/
+canvas{
+  border: 1px solid #bff698;
+  width: 80%;
+}
+h2{
+  font-size: 1em;
+  color: white;
+}
+.year{
+  visibility: hidden;
+  padding-left: 4em;
+  padding-right: 4em;
+}

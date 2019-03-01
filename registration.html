@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header role="banner">
+		<nav role="navigation">
+			<ul>
+				<li><a href="graph.html" class="nav">Graphs</a></li>
+				<li class="active"><a href="registration.html" class="nav">Registration</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main role="main" class="wrapper" id="content">
+		<!-- Form -->
+		<form action="#" method="post" id="regForm">
+			<fieldset>
+				<legend>Registration form</legend>
+
+				<!-- Name input-->
+				<label for="name1">Name*</label>
+					<input type="text" id="name1" autofocus placeholder="enter your name">
+					<span class="hint" id="nameHint">Please provide your name</span>
+
+				<!-- email input-->
+				<label for="email1">Email*</label>
+					<input type="email" id="email1" placeholder="enter your email" required>
+					<span class="hint" id="email1Hint">Not valid email address</span>
+
+				<!-- password input-->
+				<label for="password">Password*</label>
+					<input type="password" id="password1" placeholder="enter your password" required>
+					<span class="hint" id="pwd1Hint">Password must be at least 8 characters</span>
+					<span class="hint" id="pwd1Hint21">has one uppercase letter</span>
+					<span class="hint" id="pwd1Hint31">has one special character</span>
+					<span class="hint" id="pwd1Hint41">has one number</span>
+					<span class="hint" id="pwd1Hint1">PASSWORD STRENGTH: </span>
+					<span class="hint" id="pwd1Hint0">-</span>
+					<span class="hint" id="pwd1Hint2">-</span>
+					<span class="hint" id="pwd1Hint3">-</span>
+					<span class="hint" id="pwd1Hint4">-</span>
+
+				<!-- retype password input-->
+				<label for="password">Retype Password*</label>
+					<input type="password" id="password2" placeholder="re-enter your password" required>
+				<span class="hint" id="pwd2Hint">Passwords don't match</span><br>
+
+				<!-- select avatar image-->
+				<label for="avatarSel">Avatar Icon</label>
+					<select name="avatarSel" id="avatarSel">
+						<option value="" selected>Select one...</option>
+					</select>
+
+				<!-- submit-->
+				<button type="submit" id="submitBtn">Send</button>
+			</fieldset>
+		</form> <!-- end of form -->
+		<aside>
+			<span id="nameAva">Your name here</span>
+			<img id="pic" alt="girl" src="img/girl.png" />
+		</aside>
+	</main>
+	<footer role="contentinfo"><p>&copy; Svitlana Lesiv</p></footer>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/form_validation.js"></script>
+	<script type="text/javascript" src="js/password_validation.js"></script>
+</body>
+</html>

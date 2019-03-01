@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Graphs</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header role="banner">
+		<nav role="navigation">
+			<ul>
+				<li class="active"><a href="graph.html" class="nav">Graphs</a></li>
+				<li><a href="registration.html" class="nav">Registration</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main role="main" class="wrapper" id="content">
+			<div class="canvas">
+					<h1>Projected tourist arrivals 1995-2020</h1>
+					<!-- canvas-->
+					<canvas id="c1">Canvas not supported</canvas>
+					<h2><span class="year">1995</span><span class="year">2000</span>
+					<span class="year">2010</span><span class="year">2014</span>
+					<span class="year">2020</span></h2>
+					<!-- select data-->
+					<label for="rgnSelect">Regions</label>
+					<select id="rgnSelect">
+						<option value="-1">Select a Region...</option>
+					</select>
+			</div>
+	</main>
+	<footer role="contentinfo"><p>&copy; Svitlana Lesiv</p></footer>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/graph.js"></script>
+</body>
+</html>
